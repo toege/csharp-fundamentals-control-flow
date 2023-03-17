@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace csharp_fundamentals_control_flow.Test
 {
-    public class ExtensionTest
+    public class ExtensionTests
     {
         Extension extension;
 
-        public ExtensionTest()
+        public ExtensionTests()
         {
             this.extension = new Extension();
         }

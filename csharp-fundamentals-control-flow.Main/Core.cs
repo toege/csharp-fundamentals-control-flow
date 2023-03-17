@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace csharp_fundamentals_control_flow.Main
 {
-    public class Exercise
+    public class Core
     {
         /*
             One of the core building blocks of programming in any language is conditional statements.
