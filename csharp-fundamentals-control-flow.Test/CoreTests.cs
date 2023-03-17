@@ -3,11 +3,11 @@ using NUnit.Framework;
 
 namespace csharp_fundamentals_control_flow.Test
 {
-    public class ExerciseTests
+    public class CoreTests
     {
         Core exercise;
 
-        public ExerciseTests()
+        public CoreTests()
         {
             this.exercise = new Core();
         }
@@ -62,7 +62,7 @@ namespace csharp_fundamentals_control_flow.Test
         {
             Assert.AreEqual("Correct!", this.exercise.eight(8, 8));
             Assert.AreEqual("Correct!", this.exercise.eight(10, 8));
-            Assert.AreEqual("Wrong!", this.exercise.eight(8, 6));
+            Assert.AreEqual("Wrong!", this.exercise.eight(6, 8));
         }
 
         [Test]
