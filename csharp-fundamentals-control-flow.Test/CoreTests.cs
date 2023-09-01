@@ -5,117 +5,126 @@ namespace csharp_fundamentals_control_flow.Test
 {
     public class CoreTests
     {
-        Core exercise;
-
-        public CoreTests()
-        {
-            this.exercise = new Core();
-        }
+              
 
         [Test]
         public void answer1()
         {
-            Assert.AreEqual("Good day!", this.exercise.one());
+            Core exercise = new Core();
+            Assert.AreEqual("Good day!", exercise.one());
         }
 
         [Test]
         public void answer2()
         {
-            Assert.AreEqual("Good morning!", this.exercise.two());
+            Core exercise = new Core();
+            Assert.AreEqual("Good morning!", exercise.two());
         }
 
         [Test]
         public void answer3()
         {
-            Assert.AreEqual("Good morning!", this.exercise.three());
+            Core exercise = new Core();
+            Assert.AreEqual("Good morning!", exercise.three());
         }
 
         [Test]
         public void answer4()
         {
-            Assert.AreEqual("Good morning!", this.exercise.four());
+
+            Core exercise = new Core();
+            Assert.AreEqual("Good morning!", exercise.four());
         }
 
         [Test]
         public void answer5()
         {
-            Assert.AreEqual("Good day!", this.exercise.five());
+            Core exercise = new Core();
+            Assert.AreEqual("Good day!", exercise.five());
         }
 
         [Test]
         public void answer6()
         {
-            Assert.AreEqual("Correct!", this.exercise.six(8));
-            Assert.AreEqual("Wrong!", this.exercise.six(6));
-            Assert.AreEqual("Wrong!", this.exercise.six(7));
+            Core exercise = new Core();
+            Assert.AreEqual("Correct!", exercise.six(8));
+            Assert.AreEqual("Wrong!", exercise.six(6));
+            Assert.AreEqual("Wrong!", exercise.six(7));
         }
 
         [Test]
         public void answer7()
         {
-            Assert.AreEqual("Correct!", this.exercise.seven(false));
-            Assert.AreEqual("Wrong!", this.exercise.seven(true));
+            Core exercise = new Core();
+            Assert.AreEqual("Correct!", exercise.seven(false));
+            Assert.AreEqual("Wrong!", exercise.seven(true));
         }
 
         [Test]
         public void answer8()
         {
-            Assert.AreEqual("Correct!", this.exercise.eight(8, 8));
-            Assert.AreEqual("Correct!", this.exercise.eight(10, 8));
-            Assert.AreEqual("Wrong!", this.exercise.eight(6, 8));
+            Core exercise = new Core();
+            Assert.AreEqual("Correct!", exercise.eight(8, 8));
+            Assert.AreEqual("Correct!", exercise.eight(10, 8));
+            Assert.AreEqual("Wrong!", exercise.eight(6, 8));
         }
 
         [Test]
         public void answer9()
         {
-            Assert.True(this.exercise.nine(new int[] { 3, 6, 7 }));
-            Assert.False(this.exercise.nine(new int[0]));
+            Core exercise = new Core();
+            Assert.True(exercise.nine(new int[] { 3, 6, 7 }));
+            Assert.False(exercise.nine(new int[0]));
         }
 
         [Test]
         public void answer10()
         {
-            Assert.True(this.exercise.ten("I need to buy milk and coffee"));
-            Assert.False(this.exercise.ten("I need to buy tea and coffee"));
+            Core exercise = new Core();
+            Assert.True(exercise.ten("I need to buy milk and coffee"));
+            Assert.False(exercise.ten("I need to buy tea and coffee"));
         }
 
         [Test]
         public void answer11()
         {
-            Assert.AreEqual(3, this.exercise.eleven("I need to buy milk"));
-            Assert.AreEqual(6, this.exercise.eleven("I need to buy coffee"));
-            Assert.AreEqual(9, this.exercise.eleven("I need to buy milk and coffee"));
-            Assert.AreEqual(0, this.exercise.eleven("I need to buy a video game"));
+            Core exercise = new Core();
+            Assert.AreEqual(3, exercise.eleven("I need to buy milk"));
+            Assert.AreEqual(6, exercise.eleven("I need to buy coffee"));
+            Assert.AreEqual(9, exercise.eleven("I need to buy milk and coffee"));
+            Assert.AreEqual(0, exercise.eleven("I need to buy a video game"));
         }
 
         [Test]
         public void answer12()
         {
-            Assert.True(this.exercise.twelve(5, 5, 5));
-            Assert.True(this.exercise.twelve(5, 3, 7));
-            Assert.True(this.exercise.twelve(5, 5, 7));
-            Assert.True(this.exercise.twelve(5, 3, 5));
-            Assert.False(this.exercise.twelve(5, 6, 5));
-            Assert.False(this.exercise.twelve(5, 3, 4));
+            Core exercise = new Core();
+            Assert.True(exercise.twelve(5, 5, 5));
+            Assert.True(exercise.twelve(5, 3, 7));
+            Assert.True(exercise.twelve(5, 5, 7));
+            Assert.True(exercise.twelve(5, 3, 5));
+            Assert.False(exercise.twelve(5, 6, 5));
+            Assert.False(exercise.twelve(5, 3, 4));
         }
 
         [Test]
         public void answer13()
         {
-            Assert.AreEqual("Baby", this.exercise.thirteen(0));
-            Assert.AreEqual("Toddler", this.exercise.thirteen(1));
-            Assert.AreEqual("Toddler", this.exercise.thirteen(2));
-            Assert.AreEqual("Toddler", this.exercise.thirteen(3));
-            Assert.AreEqual("Toddler", this.exercise.thirteen(4));
-            Assert.AreEqual("Child", this.exercise.thirteen(5));
-            Assert.AreEqual("Child", this.exercise.thirteen(8));
-            Assert.AreEqual("Child", this.exercise.thirteen(12));
-            Assert.AreEqual("Teenager", this.exercise.thirteen(13));
-            Assert.AreEqual("Teenager", this.exercise.thirteen(15));
-            Assert.AreEqual("Teenager", this.exercise.thirteen(19));
-            Assert.AreEqual("Adult", this.exercise.thirteen(20));
-            Assert.AreEqual("Adult", this.exercise.thirteen(32));
-            Assert.AreEqual("Adult", this.exercise.thirteen(1928));
+            Core exercise = new Core();
+            Assert.AreEqual("Baby", exercise.thirteen(0));
+            Assert.AreEqual("Toddler", exercise.thirteen(1));
+            Assert.AreEqual("Toddler", exercise.thirteen(2));
+            Assert.AreEqual("Toddler", exercise.thirteen(3));
+            Assert.AreEqual("Toddler", exercise.thirteen(4));
+            Assert.AreEqual("Child", exercise.thirteen(5));
+            Assert.AreEqual("Child", exercise.thirteen(8));
+            Assert.AreEqual("Child", exercise.thirteen(12));
+            Assert.AreEqual("Teenager", exercise.thirteen(13));
+            Assert.AreEqual("Teenager", exercise.thirteen(15));
+            Assert.AreEqual("Teenager", exercise.thirteen(19));
+            Assert.AreEqual("Adult", exercise.thirteen(20));
+            Assert.AreEqual("Adult", exercise.thirteen(32));
+            Assert.AreEqual("Adult", exercise.thirteen(1928));
         }
     }
 }
